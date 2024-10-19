@@ -12,7 +12,28 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-         </ul>
+        </ul>
     </nav>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+            <option value="">--Please choose an option--</option>
+            <option value="saying_hi">Saying Hi</option>
+            <option value="looking_for_contractor">Looking for a Contractor</option>
+            <option value="interested_in_interview">Interested in an Interview</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
